@@ -11,6 +11,9 @@ jobs:
     name: build:required
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v6
+
       - uses: ./.github/actions/prepare
 
       - name: Build the app

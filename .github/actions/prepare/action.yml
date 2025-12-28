@@ -4,9 +4,6 @@ description: Prepare the environment for the workflow
 runs:
   using: composite
   steps:
-    - name: Checkout Code
-      uses: actions/checkout@v6
-
     - uses: actions/setup-bun@v2
       with:
         bun-version-file: .bun-version
