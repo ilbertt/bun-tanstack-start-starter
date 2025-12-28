@@ -1,12 +1,10 @@
-Welcome to your new TanStack app! 
-
-# Getting Started
+# Bun + TanStack Start + Tailwind CSS Starter
 
 To run this application:
 
 ```bash
 bun install
-bun --bun run start
+bun dev
 ```
 
 # Building For Production
@@ -14,23 +12,12 @@ bun --bun run start
 To build this application for production:
 
 ```bash
-bun --bun run build
-```
-
-## Testing
-
-This project uses [Vitest](https://vitest.dev/) for testing. You can run the tests with:
-
-```bash
-bun --bun run test
+bun run build
 ```
 
 ## Styling
 
 This project uses [Tailwind CSS](https://tailwindcss.com/) for styling.
-
-
-
 
 ## Routing
 This project uses [TanStack Router](https://tanstack.com/router). The initial setup is a file based router. Which means that the routes are managed as files in `src/routes`.
@@ -92,7 +79,6 @@ export const Route = createRootRoute({
 The `<TanStackRouterDevtools />` component is not required so you can remove it if you don't want it in your layout.
 
 More information on layouts can be found in the [Layouts documentation](https://tanstack.com/router/latest/docs/framework/react/guide/routing-concepts#layouts).
-
 
 ## Data Fetching
 
