@@ -4,11 +4,10 @@
   "type": "module",
   "scripts": {
     "dev": "bun run --bun vite dev --port 3000",
-    "build": "bun run --bun vite build",
+    "build": "bun run --bun tsc && bun run --bun vite build",
     "preview": "bun run --bun vite preview",
-    "check:types": "bun run --bun tsc",
-    "check:style": "bun run --bun biome check --write",
-    "check:all": "bun check:types && bun check:style"
+    "codestyle:check": "bun run --bun biome check",
+    "codestyle:fix": "bun run --bun biome check --write"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.6",
