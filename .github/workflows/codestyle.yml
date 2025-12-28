@@ -1,0 +1,17 @@
+name: codestyle
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  codestyle:
+    name: codestyle:required
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions/prepare
+
+      - name: Check JS Codestyle
+        run: bun codestyle:check
